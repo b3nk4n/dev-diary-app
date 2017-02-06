@@ -5,7 +5,7 @@
     <Language code="de" />
     <Language code="en" />
   </Languages>
-  <App xmlns="" ProductID="{c43f182a-6a26-4fcc-bad1-e72dbad68c55}" Title="Developer's Diary" RuntimeType="Silverlight" Version="1.2.0.0" Genre="apps.normal" Author="Benjamin Sautermeister" Description="News, Updates and Best Practices aus der Softwareentwicklung und zudem Infos aus meinem Leben, dem Studium an der HTWG Konstanz in Deutschland oder dem Worcester Polytechnic Institute in den USA." Publisher="Benjamin Sautermeister" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+  <App xmlns="" ProductID="{c43f182a-6a26-4fcc-bad1-e72dbad68c55}" Title="Developer's Diary" RuntimeType="Silverlight" Version="1.3.0.0" Genre="apps.normal" Author="Benjamin Sautermeister" Description="News, Updates and Best Practices aus der Softwareentwicklung und zudem Infos aus meinem Leben, dem Studium an der HTWG Konstanz in Deutschland oder dem Worcester Polytechnic Institute in den USA." Publisher="Benjamin Sautermeister" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
     <IconPath IsRelative="true" IsResource="false">Images\Logo-f57c05f7-f831-4da3-9cb9-a68e3f33396b.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
