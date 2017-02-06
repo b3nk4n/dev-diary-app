@@ -1,10 +1,6 @@
 ﻿using Microsoft.Phone.Shell;
 using PhoneKit.Framework.Core.Tile;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WPAppStudio.Entities.Base;
 using WPAppStudio.Resources;
 
@@ -39,7 +35,13 @@ namespace WPAppStudio.Helpers
 
             if (!string.IsNullOrEmpty(data.ImageUrl))
             {
-                var imageUri = new Uri(data.ImageUrl, UriKind.Absolute);
+                var imgUrlString = data.ImageUrl;
+
+                if (imgUrlString.StartsWith("https://"))
+                    imgUrlString = imgUrlString.Replace("https://", "http://");
+
+                var imageUri = new Uri(imgUrlString, UriKind.Absolute);
+
                 tile.BackBackgroundImage = imageUri;
                 tile.WideBackBackgroundImage = imageUri;
             }

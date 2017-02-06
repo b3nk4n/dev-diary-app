@@ -8,13 +8,8 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Scheduler;
 using Microsoft.Phone.Shell;
-using WPAppStudio.Services;
-using WPAppStudio.ViewModel;
 using PhoneKit.Framework.Support;
-using System.Globalization;
-using System.Threading;
 using System.Windows.Markup;
 using WPAppStudio.Resources;
 
@@ -66,7 +61,7 @@ namespace WPAppStudio
 
         private void RootFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
         {
-            ErrorReportingManager.Instance.Save(e.Exception);
+            ErrorReportingManager.Instance.Save(e.Exception, AppResources.ApplicationVersion, AppResources.ResourceLanguage);
 
             if (Debugger.IsAttached)
             {
@@ -76,7 +71,7 @@ namespace WPAppStudio
 
         private void Application_UnhandledException(object sender, ApplicationUnhandledExceptionEventArgs e)
         {
-            ErrorReportingManager.Instance.Save(e.ExceptionObject);
+            ErrorReportingManager.Instance.Save(e.ExceptionObject, AppResources.ApplicationVersion, AppResources.ResourceLanguage);
 
             if (Debugger.IsAttached)
             {

@@ -90,7 +90,7 @@ namespace WPAppStudio.View
 		
             Windows8_NewsListControl.SelectedItem = null;
 
-            StartupActionManager.Instance.Fire();
+            StartupActionManager.Instance.Fire(e);
 		}
 
         private void BindableApplicationBarMenuItem_Click(object sender, EventArgs e)

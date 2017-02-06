@@ -139,12 +139,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.5.0.2\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PhoneKit.Framework">
-      <HintPath>..\Lib\PhoneKit.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="PhoneKit.Framework.Core">
-      <HintPath>..\Lib\PhoneKit.Framework.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.ServiceModel.Syndication, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\System.ServiceModel.Syndication.dll</HintPath>
@@ -322,6 +316,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\phonekit.framework\PhoneKit.Framework.Core\PhoneKit.Framework.Core.csproj">
+      <Project>{0028ac27-312b-4f73-b8f2-c3b8d9740a86}</Project>
+      <Name>PhoneKit.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\phonekit.framework\PhoneKit.Framework\PhoneKit.Framework.csproj">
+      <Project>{9274ed00-223e-41d1-a1bc-e7cdd8c8d34d}</Project>
+      <Name>PhoneKit.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{68338DC5-7BC9-425A-A6E8-66C05BBCCFE7}</Project>
       <Name>Entities</Name>
